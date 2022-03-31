@@ -37,9 +37,9 @@ operators.forEach((operator) => {
     })
 })
 
-const percentage = document.getElementsByClassName(".percentage")
+const percentage = document.querySelector(".percentage")
 percentage.addEventListener("click", (event) => {
-    inputNumber(parseFloat(currentNumber) / parseFloat(100))
+    currentNumber = parseFloat(currentNumber) / parseFloat(100)
     updateScreen(currentNumber)
 })
 
