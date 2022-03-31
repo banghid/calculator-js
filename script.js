@@ -37,6 +37,10 @@ operators.forEach((operator) => {
     })
 })
 
+operator.addEventListener("click", (event) => {
+    updateScreen((parseFloat(event.target.value) / parseFloat(100)))
+})
+
 const calculate = () => {
     let result = ''
     switch(calculationOperator){
@@ -53,7 +57,7 @@ const calculate = () => {
             result = parseFloat(prevNumber) / parseFloat(currentNumber)
             break
         case '%':
-            result = parseFloat(prevNumber) / parseFloat(100)
+            result = 
             break
         default:
             return           
