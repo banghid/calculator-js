@@ -37,7 +37,8 @@ operators.forEach((operator) => {
     })
 })
 
-operator.addEventListener("click", (event) => {
+const percentage = document.getElementsByClassName(".percentage")
+percentage.addEventListener("click", (event) => {
     updateScreen((parseFloat(event.target.value) / parseFloat(100)))
 })
 
